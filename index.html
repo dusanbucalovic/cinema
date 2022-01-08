@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <section id="landing">
+        <nav>
+            <div class="nav__container">
+                    <img class="logo" src="./assets/play_button.svg" alt="">
+                    <ul class="nav__links">
+                        <li><a href="#" class="nav__link">Home</a></li>
+                        <li><a href="#" class="nav__link">Contact</a></li>
+                        <li><a href="#" class="nav__link nav__link--primary">Movies</a></li>
+                    </ul>
+                
+                <button class="btn__menu" onclick="openMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="menu__backdrop">
+                    <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <ul class="menu__links">
+                        <li class="menu__list">
+                            <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#features" class="menu__link" onclick="closeMenu()">Movies</a>
+                        </li>
+                        <li class="menu__list">
+                            <a class="menu__link no-cursor" onclick="closeMenu()">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <div class="header__container">
+                <div class="header__description">
+                    <h1>America's most awarded online movie platform</h1>
+                    <h2>Find your favorite movies with <span class="blue">Cinema</span></h2>
+                    <a href="#features">
+                        <button class="btn">Browse movies</button>
+                    </a>
+                </div>
+                <figure class="header__img--wrapper">
+                    <img src="./assets/undraw_home_cinema_l7yl.svg" alt="">
+                </figure>
+            </div>
+        </header>
+    </section>
+
+    <main>
+        <section id="highlights">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section__title">
+                        Why choose <span class="blue">Cinema?</span>
+                    </h2>
+                    <div class="highlight__wrapper">
+                        <div class="highlight">
+                            <div class="highlight__img">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h3 class="highlight__subtitle">
+                                Easy and Quick
+                            </h3>
+                            <p class="highlight__para">
+                                Get access to the movie you purchased online instantly.
+                            </p>
+                        </div>
+                        <div class="highlight">
+                            <div class="highlight__img">
+                                <i class="fas fa-film"></i>
+                            </div>
+                            <h3 class="highlight__subtitle">
+                                10,000+ Movies
+                            </h3>
+                            <p class="highlight__para">
+                                Cinema has movies in all your favorite categories.
+                            </p>
+                        </div>
+                        <div class="highlight">
+                            <div class="highlight__img">
+                                <i class="fas fa-tags"></i>
+                            </div>
+                            <h3 class="highlight__subtitle">
+                                Affordable
+                            </h3>
+                            <p class="highlight__para">
+                                Get your hands on popular movies for as little as $10. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="features">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section__title">
+                        Featured <span class="blue">Movies</span>
+                    </h2>
+                    <div class="movies">
+                        <div class="movie">
+                            <figure class="movie-img--wrapper">
+                                <img class="movie__img" src="./assets/spidermanmovie.jpeg" alt="">
+                            </figure>
+                            <div class="movie__title">
+                                Spider-Man: No Way Home
+                            </div>
+                            <div class="movie__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                            <div class="movie__price">
+                                <span class="movie__price--normal">$34.99</span>$24.99
+                            </div>
+                        </div>
+                        <div class="movie">
+                            <figure class="movie-img--wrapper">
+                                <img class="movie__img" src="./assets/matrix.jpg" alt="">
+                            </figure>
+                            <div class="movie__title">
+                                The Matrix Resurrection
+                            </div>
+                            <div class="movie__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                            <div class="movie__price">
+                                <span class="movie__price--normal">$34.99</span>$24.99
+                            </div>
+                        </div>
+                        <div class="movie">
+                            <figure class="movie-img--wrapper">
+                                <img class="movie__img" src="./assets/movie3.jpg" alt="">
+                            </figure>
+                            <div class="movie__title">
+                                No Time To Die
+                            </div>
+                            <div class="movie__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                            <div class="movie__price">
+                                <span class="movie__price--normal">$24.99</span>$19.99
+                            </div>
+                        </div>
+                        <div class="movie">
+                            <figure class="movie-img--wrapper">
+                                <img class="movie__img" src="./assets/movie4.jpeg" alt="">
+                            </figure>
+                            <div class="movie__title">
+                                Venom: Let There Be Carnage
+                            </div>
+                            <div class="movie__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                            <div class="movie__price">
+                                <span class="movie__price--normal">$24.99</span>$19.99
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="recent">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section__title">
+                        Featured <span class="blue">Movies</span>
+                    </h2>
+                    <div class="movies">
+                        <div class="movie">
+                            <figure class="movie-img--wrapper">
+                                <img class="movie__img" src="./assets/movie5.jpg" alt="">
+                            </figure>
+                            <div class="movie__title">
+                                Shang-Chi and the Legend of the Ten Rings
+                            </div>
+                            <div class="movie__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                            <div class="movie__price">
+                                $9.99
+                            </div>
+                        </div>
+                        <div class="movie">
+                            <figure class="movie-img--wrapper">
+                                <img class="movie__img" src="./assets/movie6.jpg" alt="">
+                            </figure>
+                            <div class="movie__title">
+                                The Wolf of Wallstreet
+                            </div>
+                            <div class="movie__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                            <div class="movie__price">
+                                $9.99
+                            </div>
+                        </div>
+                        <div class="movie">
+                            <figure class="movie-img--wrapper">
+                                <img class="movie__img" src="./assets/movie7.jpg" alt="">
+                            </figure>
+                            <div class="movie__title">
+                                Green Book
+                            </div>
+                            <div class="movie__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                            <div class="movie__price">
+                                $9.99
+                            </div>
+                        </div>
+                        <div class="movie">
+                            <figure class="movie-img--wrapper">
+                                <img class="movie__img" src="./assets/movie8.jpg" alt="">
+                            </figure>
+                            <div class="movie__title">
+                                The Imitation Game
+                            </div>
+                            <div class="movie__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                            <div class="movie__price">
+                                $9.99
+                            </div>
+                        </div>
+                        <div class="movie">
+                            <figure class="movie-img--wrapper">
+                                <img class="movie__img" src="./assets/movie9.jpg" alt="">
+                            </figure>
+                            <div class="movie__title">
+                                Get Out
+                            </div>
+                            <div class="movie__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                            <div class="movie__price">
+                                $9.99
+                            </div>
+                        </div>
+                        <div class="movie">
+                            <figure class="movie-img--wrapper">
+                                <img class="movie__img" src="./assets/movie10.jpg" alt="">
+                            </figure>
+                            <div class="movie__title">
+                                Coach Carter
+                            </div>
+                            <div class="movie__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                            <div class="movie__price">
+                                $9.99
+                            </div>
+                        </div>
+                        <div class="movie">
+                            <figure class="movie-img--wrapper">
+                                <img class="movie__img" src="./assets/movie11.jpg" alt="">
+                            </figure>
+                            <div class="movie__title">
+                                Moonlight
+                            </div>
+                            <div class="movie__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                            <div class="movie__price">
+                                $9.99
+                            </div>
+                        </div>
+                        <div class="movie">
+                            <figure class="movie-img--wrapper">
+                                <img class="movie__img" src="./assets/movie12.jpg" alt="">
+                            </figure>
+                            <div class="movie__title">
+                                Birdman
+                            </div>
+                            <div class="movie__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                            <div class="movie__price">
+                                $9.99
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="explore">
+            <div class="container">
+                <div class="row__column">
+                    <h2>Explore More <span class="blue">Movies</span></h2>
+                    <a href="#features">
+                        <button class="btn">Browse Movies</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row row__column">
+                <a href="#">
+                    <figure class="footer__logo">
+                        <img src="./assets/play_button.svg" class="footer__logo--img" alt="">
+                    </figure>
+                </a>
+                <div class="footer__list">
+                    <a href="" class="footer__link">Home</a>
+                    <a href="" class="footer__link no-cursor">About</a>
+                    <a href="" class="footer__link">Movies</a>
+                    <a href="" class="footer__link no-cursor">Contact</a>
+                </div>
+                <div class="footer__copyright">Copyright &copy; 2021 Cinema</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
